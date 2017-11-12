@@ -2,39 +2,39 @@ package work;
 
 public class DepositAccount {
 
-	private String username;		    //´¢´æĞÕÃû
-	private int accountNumber;			//ÕËºÅ
-	private String password="000000";	//ÃÜÂë
-	private float balance;				//´æ¿îÓà¶î
-	static double rate;					//ÄêÀûÂÊ
+	private String username;		    //å‚¨å­˜å§“å
+	private int accountNumber;			//è´¦å·
+	private String password="000000";	//å¯†ç 
+	private float balance;				//å­˜æ¬¾ä½™é¢
+	static double rate;					//å¹´åˆ©ç‡
 	
-	//¿ª»§
+	//å¼€æˆ·
 	DepositAccount(String name,int number,float bal){
 		username = name;
 		accountNumber = number;
 		balance = bal;
 	}
 	
-	//´æ¿î
+	//å­˜æ¬¾
 	public void save(float n){
-		System.out.println("Óà¶î:"+balance);
-		System.out.println("´æÈë:"+n);
+		System.out.println("ä½™é¢:"+balance);
+		System.out.println("å­˜å…¥:"+n);
 		balance += n;
-		System.out.println("×Ü¶î:"+balance);
+		System.out.println("æ€»é¢:"+balance);
 	}
 	
-	//È¡¿î
+	//å–æ¬¾
 	public void withdrawal(float n){
 		if(n<=balance){
 			balance -= n;
-			System.out.println("È¡¿î³É¹¦!");
+			System.out.println("å–æ¬¾æˆåŠŸ!");
 			System.out.println("balance:"+balance);
 		}else{
-			System.out.println("Óà¶î²»×ã!");
+			System.out.println("ä½™é¢ä¸è¶³!");
 		}
 	}
 	
-	//²éÑ¯»§Ö÷
+	//æŸ¥è¯¢æˆ·ä¸»
 	public String getName(){
 		return username;
 	}
@@ -47,27 +47,27 @@ public class DepositAccount {
 		return password;
 	}
 	
-	//ÉèÖÃÃÜÂë
+	//è®¾ç½®å¯†ç 
 	public String setPassword(String ps){
 		return password = ps;
 	}
 	
-	//²éÑ¯Óà¶î
+	//æŸ¥è¯¢ä½™é¢
 	public double getBalance(){
 		return balance*(1+rate);
 	}
 	
-	//ÉèÖÃÄêÀûÂÊ
+	//è®¾ç½®å¹´åˆ©ç‡
 	public static void setRate(double n){
 		rate = n;
 	}
 	
-	//²éÑ¯ÄêÀûÏ¢
+	//æŸ¥è¯¢å¹´åˆ©æ¯
 	public double get_year(){
 		return balance*rate;
 	}
 	
-	//²éÑ¯ÔÂÀûÏ¢
+	//æŸ¥è¯¢æœˆåˆ©æ¯
 	public double get_month(){
 		return balance*rate/12;
 	}
