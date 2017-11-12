@@ -13,12 +13,12 @@ public class Car {
 		double weight = 0;
 		double weight1 = 0;
 		double weight2 = 0;
-		//Ğ¡»õ³µÄÜ×°3¼şÎïÆ·
+		//å°è´§è½¦èƒ½è£…3ä»¶ç‰©å“
 		for(int i=0;i<3;i++){
 			weight1 += a[i].computeWeight();
 		}
-		System.out.println("Ğ¡»õ³µ×ÜÖÊÁ¿:"+weight1+"kg");
-		//´ó»õ³µÄÜ×°5¼şÎïÆ·
+		System.out.println("å°è´§è½¦æ€»è´¨é‡:"+weight1+"kg");
+		//å¤§è´§è½¦èƒ½è£…5ä»¶ç‰©å“
 		for(int i=0;i<5;i++){
 			int c=0;
 			if(c>3)
@@ -26,8 +26,8 @@ public class Car {
 			weight2 += a[c].computeWeight();
 			c++;
 		}
-		System.out.println("´ó»õ³µ×ÜÖÊÁ¿:"+weight2+"kg");
+		System.out.println("å¤§è´§è½¦æ€»è´¨é‡:"+weight2+"kg");
 		weight = weight1 +weight2;
-		System.out.println("×ÜÖÊÁ¿:"+weight+"kg");
+		System.out.println("æ€»è´¨é‡:"+weight+"kg");
 	}
 }
