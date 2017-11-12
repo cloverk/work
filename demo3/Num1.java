@@ -6,7 +6,7 @@ public class Num1 {
 	public static void main(String[] args) {
 		int n;
 		Scanner in = new Scanner(System.in);
-		System.out.println("请输入一个正整数:");
+		System.out.println("脟毛脢盲脠毛脪禄赂枚脮媒脮没脢媒:");
 		n = in.nextInt();
 		number(n);
 	}
