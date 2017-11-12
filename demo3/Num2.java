@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Num2 {
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸öÕıÕûÊı:");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°:");
 		int n = in.nextInt();
 		
-		int m = 0;          //²ãÊı
-		int d = 1;			//ÊıÖµ
+		int m = 0;          //å±‚æ•°
+		int d = 1;			//æ•°å€¼
 		int[][] arr = new int[n][n];
 		
 		if(n %2 ==0) {
