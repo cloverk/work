@@ -42,7 +42,7 @@ public class Graduate implements StudentManageInterface,TeacherManageInterface{
 	}
 	
 	public static void main(String[] args){
-		Graduate graduate = new Graduate("ÕÅÈı","ÄĞ",21);
+		Graduate graduate = new Graduate("ÅÄ¹ÄŒÃ½","Ã„Ä",21);
 		graduate.setFee(5500);
 		graduate.setPay(750);
 		graduate.b();
