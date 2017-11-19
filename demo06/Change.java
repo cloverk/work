@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Change {
 	public static void main(String[] args) {
-		System.out.println("ÊäÈëÒ»¸ö16½øÖÆÊı:");
+		System.out.println("è¾“å…¥ä¸€ä¸ª16è¿›åˆ¶æ•°:");
 		Scanner s = new Scanner(System.in);
 		try{
 			while(s.hasNext()){
 				int a = s.nextInt(16);
-				System.out.println("×ª»»Îª10½øÖÆÊı:");
+				System.out.println("è½¬æ¢ä¸º10è¿›åˆ¶æ•°:");
 				System.out.println(a);
 			}
 		}catch(InputMismatchException e){
