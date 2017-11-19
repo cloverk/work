@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Time {
 	public static void main(String[] args) throws ParseException {
-		System.out.println("请输入一个日期(2010/2/5):");
+		System.out.println("脟毛脢盲脠毛脪禄赂枚脠脮脝脷(2010/2/5):");
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();
 		try{
